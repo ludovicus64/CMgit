@@ -95,6 +95,10 @@ class configurateurmousseMatelasModuleFrontController extends ModuleFrontControl
     			$this->context->cookie->__set('longueur2' , $_POST["longueur2"]);
     		}
     		
+    		if($forme=="quartderond"){//On enregistre dans le cookie la valeur du diametre
+    			$this->context->cookie->__set('rayon' , $_POST["rayon"]);
+    		}
+    		
     		//Dans tous les cas on sauve l'épaisseur dans les données cookies de prestashop
     		$this->context->cookie->__set('epaisseur' , $_POST["epaisseur"]);
     		
